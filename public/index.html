@@ -1,1 +1,54 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>咕噜每日简报</title>
+  <meta name="description" content="投资、猫咪短视频、中年情绪价值相关的每日简报。" />
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <div class="page-shell">
+    <header class="hero">
+      <div>
+        <p class="eyebrow">Daily Brief</p>
+        <h1 id="site-title">咕噜每日简报</h1>
+        <p id="site-subtitle" class="subtitle">正在加载今日内容……</p>
+      </div>
 
+      <div class="meta-card">
+        <div class="meta-label">生成日期</div>
+        <div id="brief-date" class="meta-main">--</div>
+        <div id="generated-at" class="meta-sub">--</div>
+      </div>
+    </header>
+
+    <main>
+      <section class="panel">
+        <div class="section-heading">
+          <p class="eyebrow">Summary</p>
+          <h2>今日摘要</h2>
+        </div>
+        <ul id="summary-list" class="summary-list"></ul>
+      </section>
+
+      <div id="sections"></div>
+
+      <section class="panel">
+        <div class="section-heading">
+          <p class="eyebrow">Video Ideas</p>
+          <h2>今日可拍短视频脚本</h2>
+        </div>
+        <div id="script-ideas" class="idea-grid"></div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <span>规则：宁愿留空，也不塞垃圾内容。</span>
+      <span>Powered by GitHub Actions + GitHub Pages</span>
+    </footer>
+  </div>
+
+  <script src="./app.js"></script>
+</body>
+</html>
